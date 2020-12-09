@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>SignUp test page</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900|Roboto:400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet"> 
+    
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@4.0.1/reset.min.css" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Mobile view CSS-->
+    <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="./assets/css/mobile.css" />
+
+  </head>
+  <body>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col text-center">
+                <div class="title">Sign Up </div>
+            </div>
+        </div>
+
+        <div class="row">   
+            <!-- <div class="sign" class="col text-center";>  -->
+            <div class="col text-center">
+          <!--   <a href="./index.html" ></a> -->
+          <p> Already have an account?    <a href="./index.html" >Log in</a></p>
+            </div>
+            <!-- <div class="col text-center">
+                <div class="intro"> This is the login page  </div>
+            </div> -->
+        </div>
+
+        <div class="row">
+            <div class="col-7 mx-auto">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-10 text-center mx-auto">
+                                  <!--   <div class="card-title">Sign Up!</div> -->
+                                    <div class="formGroup">
+                                        <form name="form" action="./index.html"> 
+                                            <div class="form-group">
+                                                <div style="float:left">Company Name</div>
+                                                <input type="text" class="form-control" id="c_name"placeholder="company name" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <div style="float:left">Contact Name</div>
+                                                <input type="text" class="form-control" id="f_name" placeholder="contact name" required>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div style="float:left">Email</div>
+                                                <input type="text" class="form-control" id="m_name" placeholder="Please use the vaild email address" required>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div style="float:left">Phone Number</div>
+                                                <input type="text"  name="phone" id="phone_no"class="form-control" id="l_name" placeholder="xxx-xxx-xxxx" required>
+                                                <small id="errorPhone" class="form-text text-danger"></small>
+                                            </div>    
+
+                                            <div class="form-group">
+                                                <div style="float:left">Password</div>
+                                                <input type="text" class="form-control"  placeholder="Password (Must be at least 6 characters)" required >
+                                               
+                                            </div>
+                                                
+                                          
+                                        
+                                            <div class="form-group">
+                                                <div style="float:left">Re-Password</div>
+                                                <input type="password" class="form-control" id="confPassword" placeholder="Type your password again" required>
+                                                <small id="errorPass" class="form-text text-danger"></small>
+                                            </div>
+
+                                            
+
+                                            <!-- <input  type="button" value="Sign Up" class="col-10 btn btn-Info" onclick="validateForm()" "> -->
+                                            <!-- The above botton is for later funtional use. -->
+                                            <button type="button" class="btn btn-Info col-10 "style="background-color:rgb(51, 204, 204);">Sign</button>
+                                            <br>
+                                            
+                                            <p><input type="checkbox" name="category" value="Agree to accept our " />Agree to accept our <a href="./index.html" >Privacy policy & Terms of Service</a></p>
+
+
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function validateForm() {
+        var a = document.form.phone;
+        var b = document.form.password;
+        var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+        if(a.value.match(phoneno))
+        {
+            return true;
+        } else {
+            document.getElementById('errorPhone').innerHTML = 'Not a valid phone number!';
+        }
+
+        if ((document.getElementById('password').value != document.getElementById('confPassword').value) || (document.getElementById('password').value == document.getElementById('confPassword').value) == null) { 
+            document.getElementById('errorPass').innerHTML = 'Password and Confirm Password are not same!';            
+        }
+        else if(b.value.length<6){  
+            document.getElementById('errorPass').innerHTML = 'Password must be at least 6 characters long.';
+            return false;  
+        }  
+    }
+    </script>
+   <!--  <script type="button"> 
+    
+    }</script> -->
+  
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
