@@ -1,0 +1,179 @@
+/****** General Styles *********/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none !important;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7;
+    color: #000;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+/****** Welcome Page *********/
+.title, .greet {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.6vw;
+    font-weight: bold;
+    margin: 2vh 0 1vh;
+}
+.intro {
+    font-size: 1.6vw;
+    width: 70%;
+    margin: 2vh auto;
+}
+.card {
+    margin: 5vh;
+    border-radius: 12px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    padding: 2em;
+}
+.card-title {
+    font-weight: 700;
+    font-size: 1.5vw;
+}
+input[type="email"], input[type="password"], input[type="text"] {
+    margin: 1vh 0;
+    border-radius: 12px !important;
+    box-sizing: border-box;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.12), 0 2px 3px rgba(0,0,0,0.24);
+    background-color : #fafafa; 
+    outline: none;
+}
+.btn {
+    padding: 0.5vw 3vw;
+    border-radius: 10px;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.12), 0 2px 3px rgba(0,0,0,0.24);
+    margin: 3vh 0 1vh;
+}
+
+/****** StudentDashboard Page *********/
+.cardTitle {
+    font-size: 1.3vw;
+    font-weight: 600;
+    margin:0 0 2vh 0;
+}
+.projSub {
+    margin: 0;
+    border-radius: 20px;
+    font-size: 1.1vw;
+}
+.topCount, .bottomCount {
+    margin: 2.5vh 0;
+}
+.count, .countCash {
+    font-size: 2.5vw;
+    font-weight: bold;
+    color: #2F80ED;
+}
+.countTxtCash, .countTxt {
+    font-size: 1vw;
+}
+/****** ProfDashboard Page *********/
+.displayName {
+    font-size: 2vw;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin: 2vh 0 1vh;
+}
+.entry {
+    border-radius: 20px;
+}
+.logout {
+    float: right;
+    border-radius: 20px;
+}
+.projOverview {
+    font-size: 1.4vw;
+    font-weight: 500;
+    margin: 1vw 3vw;
+}
+.cardTeal, .cardYellow, .cardRed, .cardGrey {
+    box-shadow: 0 2px 3px rgba(0,0,0,0.12), 0 2px 3px rgba(0,0,0,0.24);
+    border-radius: 10px;
+    padding: 4vh 1vw;
+    color: #fff;
+}
+.cardTeal {
+    background-color: #2DC992;
+}
+.cardYellow {
+    background-color: #FFB53F;
+}
+.cardRed {
+    background-color: #FF4E4A;
+} 
+.cardGrey {
+    background-color: #ABB2C0;
+}
+.cardNumber {
+    font-size: 4vw;
+    font-weight: bold;
+}
+/****** Project Description Page *********/
+.projTitle {
+    font-size: 2vw;
+    margin: 1vw;
+}
+.proj {
+    font-size: 1.2vw;
+    color: #EB5757;
+}
+.projDesc {
+    text-align: justify;
+    margin: 1vw 0;
+}
+.techStack {
+    text-align: justify;
+    margin: 1vw 0;
+}
+
+/****** Submit Page *********/
+.txtBox {
+    margin: 10vh 0 2vh;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.12), 0 2px 3px rgba(0,0,0,0.24);
+    border-radius: 10px;
+}
+.custom-file {
+    margin: 2vh 0;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.12), 0 2px 3px rgba(0,0,0,0.24);
+    border-radius: 10px;
+}
+
+/****** addProject Page *********/
+#projTitle, .txtBox2, #techStack, #reward, #dtDate, #dtEnd {
+    margin: 2vh 0;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.12), 0 2px 3px rgba(0,0,0,0.24);
+    border-radius: 10px;
+}
+
+/****** acceptProject Page *********/
+.projectTitle {
+    font-size: 1.5vw;
+}
+
+.accept {
+    margin: 0;
+    border-radius: 20px;
+    font-size: 1.1vw;
+}
+th {
+    font-weight: bold;
+    text-align: center;
+}
+td {
+    text-align: center;
+}
+/****** Congrats Page *********/
+.greet {
+    color: #219653;
+}
+.greetText {
+    font-size: 1.3vw;
+    width: 70%;
+    margin: 2vh auto;
+}
